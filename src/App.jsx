@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './views/Home';
 import List from './views/List';
 import Random from './views/Random';

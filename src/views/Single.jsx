@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Single() {
-  return (
-    <div>
-      <>
-        <Link to="/">
-          <img src="./images/header.png" alt=""></img>
-        </Link>
-      </>
-      <h2>Single Beer</h2>
-    </div>
-  );
+export class Single extends Component {
+  constructor() {
+    super();
+    this.state = {
+      singleBeer: {},
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.state.singleBeer.name}</h2>
+      </div>
+    );
+  }
 }
+
+export default Single;
